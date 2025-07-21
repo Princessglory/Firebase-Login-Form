@@ -32,7 +32,7 @@ components and proper error handling.
 - Automatic session management
 - Secure logout functionality
 
-🖼️ Screenshots
+ Screenshots
 1. Signup Page
 ![Screenshot](images\Signup.png)
 
@@ -113,7 +113,11 @@ javascript
 // firebaseauth.js
 
 createUserWithEmailAndPassword(auth, email, password)
-  .then((userCredential) => {
+
+  .then((userCredential) =>
+  
+   {
+
     const user = userCredential.user;
     
     // Save additional user data to Firestore
@@ -131,22 +135,44 @@ javascript
 
 // homepage.js
 
-onAuthStateChanged(auth, (user) => {
+onAuthStateChanged(auth, (user) =>
+ {
+
   const userId = localStorage.getItem('loggedInUserId');
   
-  if (!userId) {
+  if (!userId)
+
+   {
+
     window.location.href = 'index.html';
-  } else {
-    // Load user data from Firestore
-    const docRef = doc(db, "users", userId);
-    // ... fetch and display user data
+
   }
+
+   else
+
+    {
+
+    // Load user data from Firestore
+
+    const docRef = doc(db, "users", userId);
+
+    // ... fetch and display user data
+
+  }
+
 });
 
+
 📬 Contact Me
+
 📧 Email: [mofogofoluwa744@gmail.com]
+
 🔗 LinkedIn: [www.linkedin.com/in/princess-glory-049270365]
+
 🐱 GitHub: [github.com/Princessglory]
 
+
+
  Thanks for Visiting!
+
 Feel free to explore, fork, or contribute to this project. Let’s connect and build something amazing together! 🚀
