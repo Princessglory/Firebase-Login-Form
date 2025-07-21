@@ -33,14 +33,17 @@ components and proper error handling.
 - Secure logout functionality
 
  Screenshots
+
 1. Signup Page
-![Screenshot](images\Signup.png)
+
+![Screenshot](images/Signup.png)
 
 2. Login Page
-![Screenshot](images\Login.png)
+
+![Screenshot](images/Login.png)
 
 
-##  Technology Stack
+##  Technology Used
 
 | Category        | Technologies Used                          |
 |-----------------|--------------------------------------------|
@@ -92,16 +95,26 @@ Or use VS Code Live Server extension
 plaintext
 
 firebase-auth/
-├── public/               # Static assets
+├── public/   # Static assets
+
 │   ├── index.html        # Login/Signup page
+
 │   ├── homepage.html     # Protected dashboard
+
 │   └── assets/           # Images/icons
+
 ├── styles/               # CSS files
+            
 │   └── styles.css        # Global styles
+
 ├── scripts/              # JavaScript files
+
 │   ├── script.js         # UI interactions
+
 │   ├── firebaseauth.js   # Auth logic
+
 │   └── homepage.js       # Protected routes
+
 └── README.md             # Project documentation
  
  Code Highlights
@@ -137,29 +150,19 @@ javascript
 
 onAuthStateChanged(auth, (user) =>
  {
-
   const userId = localStorage.getItem('loggedInUserId');
   
   if (!userId)
-
    {
-
     window.location.href = 'index.html';
-
   }
 
    else
-
     {
-
     // Load user data from Firestore
-
     const docRef = doc(db, "users", userId);
-
     // ... fetch and display user data
-
   }
-
 });
 
 
@@ -169,7 +172,7 @@ onAuthStateChanged(auth, (user) =>
 
 🔗 LinkedIn: [www.linkedin.com/in/princess-glory-049270365]
 
-🐱 GitHub: [github.com/Princessglory]
+🐱 GitHub:[https://github.com/Princessglory]
 
 
 
