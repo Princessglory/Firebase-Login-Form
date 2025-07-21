@@ -58,8 +58,7 @@ cd Firebase-Login-Form
 const firebaseConfig = {
   apiKey: "YOUR_API_KEY",
   authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID"
- };
+  projectId: "YOUR_PROJECT_ID"}
 ```
 📂 Project Structure
 
